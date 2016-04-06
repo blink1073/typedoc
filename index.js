@@ -1,4 +1,3 @@
-"use strict";
 var application_1 = require("./lib/application");
 exports.Application = application_1.Application;
 var cli_1 = require("./lib/cli");
