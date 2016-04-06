@@ -582,7 +582,7 @@ export abstract class Reflection
         }
 
         for (var key in this.flags) {
-            if (parseInt(key) == key || key == 'flags') continue;
+            if (parseInt(key) == (key as any) || key === 'flags') continue;
             if (this.flags[key]) result.flags[key] = true;
         }
 
